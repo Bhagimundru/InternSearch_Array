@@ -1,0 +1,22 @@
+/*Given an unsorted array and a number n, find if there exists a pair of elements in the array whose difference is p.*/
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int i,j,n=6,p=78;
+    int a[]={5, 20, 3, 2, 50, 80};
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(abs(a[i]-a[j])==p)
+            {
+                printf("%d %d",a[i],a[j]);
+                break;
+            }
+        }
+    }
+}
+output:
+2 80
